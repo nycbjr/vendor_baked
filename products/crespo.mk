@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/BlackICE/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/BlackICE/configs/gsm.mk)
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/crespo
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/crespo
 
 # Setup device specific product configuration.
-PRODUCT_NAME := BlackICE_crespo
+PRODUCT_NAME := baked_crespo
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := crespo
 PRODUCT_MODEL := Nexus S
@@ -21,6 +21,6 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=soju BUILD_FINGERPRINT=google/soju/
 
 # Copy crespo specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/BlackICE/prebuilt/crespo/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/BlackICE/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/crespo/Thinkfree.apk:system/app/Thinkfree.apk \
+    vendor/baked/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
 

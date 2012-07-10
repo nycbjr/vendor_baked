@@ -2,17 +2,17 @@
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/BlackICE/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/BlackICE/configs/gsm.mk)
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # Tuna overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/tuna
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/maguro
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/maguro
 
 # Setup device specific product configuration.
-PRODUCT_NAME := BlackICE_maguro
+PRODUCT_NAME := baked_maguro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
@@ -22,7 +22,7 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=yakju BUILD_FINGERPRINT=google/yakj
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/BlackICE/prebuilt/tuna/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/BlackICE/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/BlackICE/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
+    vendor/baked/prebuilt/tuna/Thinkfree.apk:system/app/Thinkfree.apk \
+    vendor/baked/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/baked/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
 

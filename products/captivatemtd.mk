@@ -3,16 +3,16 @@ $(call inherit-product, device/samsung/captivatemtd/full_captivatemtd.mk)
 # Release name
 PRODUCT_RELEASE_NAME := captivate
 
-$(call inherit-product, vendor/BlackICE/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/BlackICE/configs/gsm.mk)
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/aries-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := captivatemtd
-PRODUCT_NAME := BlackICE_captivatemtd
+PRODUCT_NAME := baked_captivatemtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SGH-I897
 
@@ -21,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I897 TARGET_DEVICE=SGH-I897 BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/BlackICE/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+	vendor/baked/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip

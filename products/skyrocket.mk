@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/skyrocket/full_skyrocket.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/BlackICE/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/BlackICE/configs/gsm.mk)
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # skyrocket overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/skyrocket
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/skyrocket
 
 # Setup device specific product configuration.
-PRODUCT_NAME := BlackICE_skyrocket
+PRODUCT_NAME := baked_skyrocket
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := skyrocket
 PRODUCT_MODEL := SGH-I727
@@ -25,5 +25,5 @@ PRODUCT_PACKAGES += \
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/BlackICE/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+	vendor/baked/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
 

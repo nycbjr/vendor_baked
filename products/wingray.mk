@@ -1,11 +1,11 @@
 $(call inherit-product, device/moto/wingray/full_wingray.mk)
 
-$(call inherit-product, vendor/BlackICE/configs/common_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_tablet.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/wingray
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/wingray
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := BlackICE_wingray
+PRODUCT_NAME := baked_wingray
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := wingray
 PRODUCT_MODEL := Xoom
@@ -15,4 +15,4 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=tervigon BUILD_ID=IML74K BUILD_FING
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/BlackICE/prebuilt/common_tablet/bootanimation.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/common_tablet/bootanimation.zip:system/media/bootanimation.zip

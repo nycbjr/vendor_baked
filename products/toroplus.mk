@@ -2,14 +2,14 @@
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/BlackICE/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 # Tuna overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/tuna
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/toroplus
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/toroplus
 
 # Setup device specific product configuration.
-PRODUCT_NAME := BlackICE_toroplus
+PRODUCT_NAME := baked_toroplus
 PRODUCT_BRAND := Google
 PRODUCT_DEVICE := toroplus
 PRODUCT_MODEL := Galaxy Nexus
@@ -19,6 +19,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT=samsung/
 
 # Copy toroplus specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/BlackICE/prebuilt/tuna/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/BlackICE/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/BlackICE/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
+    vendor/baked/prebuilt/tuna/Thinkfree.apk:system/app/Thinkfree.apk \
+    vendor/baked/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/baked/prebuilt/tuna/vold.fstab:system/etc/vold.fstab

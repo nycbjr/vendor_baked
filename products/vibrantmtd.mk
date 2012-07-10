@@ -3,18 +3,18 @@ $(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 # Release name
 PRODUCT_RELEASE_NAME := Vibrant
 
-$(call inherit-product, vendor/BlackICE/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/BlackICE/configs/gsm.mk)
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/aries-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common
 
 # $(call inherit-product, vendor/cm/config/gsm.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vibrantmtd
-PRODUCT_NAME := BlackICE_vibrantmtd
+PRODUCT_NAME := baked_vibrantmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SGH-T959
 
@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-T959 TARGET_DEVICE=SGH-T959 BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/BlackICE/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+	vendor/baked/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip

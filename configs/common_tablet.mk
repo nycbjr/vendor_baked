@@ -1,7 +1,7 @@
 # Inherit common tuff
-$(call inherit-product, vendor/BlackICE/configs/common.mk)
+$(call inherit-product, vendor/baked/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/BlackICE/overlay/common_tablets
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/common_tablets
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -17,5 +17,5 @@ PRODUCT_PACKAGES += \
         librs_jni
 
 # Inherit drm blobs
--include vendor/BlackICE/configs/common_drm_tablet.mk
+-include vendor/baked/configs/common_drm_tablet.mk
 

@@ -1,4 +1,4 @@
-$(call inherit-product, vendor/BlackICE/configs/common.mk)
+$(call inherit-product, vendor/baked/configs/common.mk)
 
 # Inherit drm blobs
--include vendor/BlackICE/configs/common_drm_phone.mk
+-include vendor/baked/configs/common_drm_phone.mk

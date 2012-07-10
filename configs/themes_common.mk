@@ -11,4 +11,4 @@ PRODUCT_PACKAGES += \
     com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
-    vendor/BlackICE/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+    vendor/baked/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml

@@ -1,14 +1,14 @@
 # Inherit AOSP device configuration for inc.
 $(call inherit-product, device/htc/inc/full_inc.mk)
 
-# Inherit some common BlackICE stuff.
-$(call inherit-product, vendor/BlackICE/configs/common_phone.mk)
+# Inherit some common baked stuff.
+$(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := BlackICE_inc
+PRODUCT_NAME := baked_inc
 PRODUCT_BRAND := verizon_wwe
 PRODUCT_DEVICE := inc
 PRODUCT_MODEL := Incredible
@@ -20,4 +20,4 @@ PRODUCT_PACKAGES += \
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/BlackICE/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+	vendor/baked/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
