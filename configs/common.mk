@@ -2,19 +2,25 @@
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/dictionaries
 
+# T-Mobile theme engine
+#include vendor/baked/configs/themes_common.mk
+
+# Inherit common build.prop overrides
+#-include vendor/baked/configs/common_versions.mk
+
 PRODUCT_PACKAGES += \
-    Apollo \
-    AppWidgetPicker \
-    bakedControl \
-    DSPManager \
-    FileManager \
+    #Apollo \
+    #AppWidgetPicker \
+    #bakedControl \
+    #DSPManager \
+    #FileManager \
     MusicFX \
     MusicVisualization \
     NoiseField \
     PhaseBeam \
-    Superuser \
-    Trebuchet \
-    libcyanogen-dsp \
+    #Superuser \
+    #Trebuchet \
+    #libcyanogen-dsp \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -28,11 +34,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	windowsmgr.max_events_per_sec=240 \
 	ro.kernel.android.checkjni=0
 
-
-# Camera shutter sound property
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.camera-sound=1
-
 # Live wallpapers for all
 PRODUCT_PACKAGES += \
     LiveWallpapers \
@@ -43,17 +44,16 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
-# Blobs common to all devices
+# Apk's common to all devices
 PRODUCT_COPY_FILES += \
+    vendor/baked/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
+    vendor/baked/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
     vendor/baked/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
-    vendor/baked/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/baked/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
-    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/baked/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
-    vendor/baked/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
-# init.d
+# init.d and Blobs common to all devices
 PRODUCT_COPY_FILES += \
+    vendor/baked/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
     vendor/baked/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
     vendor/baked/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
     vendor/baked/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
@@ -64,9 +64,12 @@ PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
     vendor/baked/prebuilt/common/etc/init.d/90tweaks:system/etc/init.d/90tweaks \
     vendor/baked/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/baked/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
     vendor/baked/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
     vendor/baked/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/baked/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/baked/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/baked/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # Cron
@@ -94,12 +97,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Copy Apex!! FTW! add CM9Music app!
-PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
-
-# T-Mobile theme engine
-include vendor/baked/configs/themes_common.mk
-
-# Inherit common build.prop overrides
--include vendor/baked/configs/common_versions.mk
+# Camera shutter sound property
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.camera-sound=1
