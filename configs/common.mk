@@ -47,13 +47,13 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # Apk's common to all devices
 PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
-    vendor/baked/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
+    vendor/baked/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/baked/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
-    vendor/baked/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
+    vendor/baked/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk
 
 # init.d and Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+    vendor/baked/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \
     vendor/baked/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
     vendor/baked/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
     vendor/baked/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
