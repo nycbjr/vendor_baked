@@ -16,5 +16,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-P3113 BUILD_FINGERPRINT=samsung/
 # Release name and versioning
 PRODUCT_RELEASE_NAME := espressowifi
 
-PRODUCT_COPY_FILES +=  \
-    vendor/baked/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+PRODUCT_PACKAGES += \
+    bootanimation_1024_600

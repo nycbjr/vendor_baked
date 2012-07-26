@@ -1,24 +1,10 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/maguro.mk \
-    $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/crespo.mk \
     $(LOCAL_DIR)/crespo4g.mk \
-    $(LOCAL_DIR)/toroplus.mk \
+    $(LOCAL_DIR)/d2tmo.mk \
+    $(LOCAL_DIR)/grouper.mk \
+    $(LOCAL_DIR)/maguro.mk \
+    $(LOCAL_DIR)/toro.mk \
+    $(LOCAL_DIR)/torospr.mk \
     $(LOCAL_DIR)/stingray.mk \
-    $(LOCAL_DIR)/wingray.mk \
-    #$(LOCAL_DIR)/captivatemtd.mk \
-    #$(LOCAL_DIR)/endeavoru.mk \
-    #$(LOCAL_DIR)/espressowifi.mk \
-    #$(LOCAL_DIR)/fascinatemtd.mk \
-    #$(LOCAL_DIR)/inc.mk \
-    #$(LOCAL_DIR)/mesmerizemtd.mk \
-    #$(LOCAL_DIR)/otter.mk \
-    #$(LOCAL_DIR)/p4.mk \
-    #$(LOCAL_DIR)/p4vzw.mk \
-    #$(LOCAL_DIR)/p4wifi.mk \
-    #$(LOCAL_DIR)/showcasemtd.mk \
-    #$(LOCAL_DIR)/skyrocket.mk \
-    #$(LOCAL_DIR)/supersonic.mk \
-    #$(LOCAL_DIR)/tenderloin.mk \
-    #$(LOCAL_DIR)/vibrantmtd.mk \
-    #$(LOCAL_DIR)/vivow.mk \
+    $(LOCAL_DIR)/wingray.mk
