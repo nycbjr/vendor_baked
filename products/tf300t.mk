@@ -3,7 +3,7 @@ $(call inherit-product, device/asus/tf300t/full_tf300t.mk)
 
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/wingray
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tf300t
 
 #
 # Setup device specific product configuration.
