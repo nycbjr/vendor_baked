@@ -1,11 +1,6 @@
 # T-Mobile theme engine
 PRODUCT_PACKAGES += \
-    Achromatic \
-    ICEBlue \
-    ICEGreen \
-    ICEOrange \
-    ICEPurple \
-    ICERed \
+    BAKEDOrange \
     ThemeManager \
     ThemeChooser \
     com.tmobile.themes

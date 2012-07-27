@@ -5,7 +5,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/dictionaries
 
 # T-Mobile theme engine
-#include vendor/baked/configs/themes_common.mk
+include vendor/baked/configs/themes_common.mk
 
 PRODUCT_PACKAGES += \
 	ApexLauncher \
