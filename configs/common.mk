@@ -8,7 +8,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/dictionaries
 include vendor/baked/configs/themes_common.mk
 
 PRODUCT_PACKAGES += \
-	ApexLauncher \
+    ApexLauncher \
     Apollo \
     AppWidgetPicker \
     ROMControl \
@@ -70,8 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/baked/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/baked/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/baked/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
+    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
 # Cron
 PRODUCT_COPY_FILES += \
