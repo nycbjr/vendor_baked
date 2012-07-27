@@ -18,5 +18,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=EeePad BUILD_FINGERPRINT=asus/WW_ep
 # Release name and versioning
 # PRODUCT_RELEASE_NAME := tf300t
 
-PRODUCT_COPY_FILES +=  \
-    vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
+PRODUCT_PACKAGES+=  \
+	bootanimation_1280_800
