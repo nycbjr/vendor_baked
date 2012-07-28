@@ -14,8 +14,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-
-
 # Prebuilt APKs
 include $(CLEAR_VARS)
 LOCAL_MODULE := LatinImeDictionaryPack
