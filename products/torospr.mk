@@ -22,5 +22,5 @@ PRODUCT_COPY_FILES += \
 
 # Torospr specific packages
 PRODUCT_PACKAGES += \
-    bootanimation_720_1280 \
+    bootanimation \
     Thinkfree
