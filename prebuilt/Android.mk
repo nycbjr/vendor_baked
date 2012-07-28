@@ -78,7 +78,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_240_320
+LOCAL_MODULE := bootanimation240320
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -89,7 +89,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_320_480
+LOCAL_MODULE := bootanimation320480
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -100,7 +100,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_480_800
+LOCAL_MODULE := bootanimation480800
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -111,7 +111,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_480_854
+LOCAL_MODULE := bootanimation480854
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -122,7 +122,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_540_960
+LOCAL_MODULE := bootanimation540960
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -133,7 +133,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_600_1024
+LOCAL_MODULE := bootanimation6001024
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -144,7 +144,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_720_1280
+LOCAL_MODULE := bootanimation7201280
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -155,7 +155,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_1024_600
+LOCAL_MODULE := bootanimation1024600
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -166,7 +166,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_1024_768
+LOCAL_MODULE := bootanimation1024768
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
@@ -177,7 +177,7 @@ LOCAL_MODULE_NAME := bootanimation.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bootanimation_1280_800
+LOCAL_MODULE := bootanimation1280800
 LOCAL_MODULE_OWNER := baked
 LOCAL_SRC_FILES := bootanimation/$(LOCAL_MODULE).zip
 LOCAL_MODULE_TAGS := optional
