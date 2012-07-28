@@ -5,7 +5,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JRO03C BUILD_VERSION_TAGS=relea
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=travp624 \
-    ro.baked.version=$(TARGET_PRODUCT)_alpha-1
+    ro.baked.version=$(TARGET_PRODUCT)_blackbean-1
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
