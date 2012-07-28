@@ -67,20 +67,7 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
-# Prebuilt su until superuser is fixed
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := su
-LOCAL_MODULE_OWNER := baked
-LOCAL_SRC_FILES := common/xbin/$(LOCAL_MODULE)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_PATH := $(TARGET_OUT)/xbin
-LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
-
-
 # Boot animations
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := bootanimation_240_320
 LOCAL_MODULE_OWNER := baked

@@ -20,8 +20,11 @@ PRODUCT_PACKAGES += \
     NoiseField \
     PhaseBeam \
     libcyanogen-dsp \
-    su \
     SuperSU
+
+# Use prebuilt su until fixed when built
+PRODUCT_COPY_FILES += \
+    vendor/baked/prebuilt/common/xbin/su:system/xbin/su
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
