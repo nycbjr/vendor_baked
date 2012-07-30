@@ -25,5 +25,8 @@ PRODUCT_COPY_FILES += \
 
 # Maguro specific packages
 PRODUCT_PACKAGES += \
-    bootanimation \
     Thinkfree
+
+# bootanimation
+PRODUCT_COPY_FILES += \
+	vendor/baked/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip

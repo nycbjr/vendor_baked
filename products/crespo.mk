@@ -18,3 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=soju BUILD_FINGERPRINT=google/soju/
 
 PRODUCT_PACKAGES += \
     Thinkfree
+
+# bootanimation
+PRODUCT_COPY_FILES += \
+	vendor/baked/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip

@@ -13,6 +13,6 @@ PRODUCT_MANUFACTURER := asus
 
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=nakasi BUILD_FINGERPRINT=google/nakasi/grouper:4.1.1/JRO03C/398337:user/release-keys PRIVATE_BUILD_DESC="nakasi-user 4.1.1 JRO03C 398337 release-keys" BUILD_NUMBER=398337
 
-# Grouper specific packages
-PRODUCT_PACKAGES += \
-	bootanimation
+# bootanimation
+PRODUCT_COPY_FILES += \
+	vendor/baked/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip

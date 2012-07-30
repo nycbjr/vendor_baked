@@ -22,5 +22,8 @@ PRODUCT_COPY_FILES += \
 
 # Toro specific packages
 PRODUCT_PACKAGES += \
-    bootanimation \
     Thinkfree
+
+# bootanimation
+PRODUCT_COPY_FILES += \
+	vendor/baked/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
