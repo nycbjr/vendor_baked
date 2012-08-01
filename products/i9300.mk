@@ -24,4 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m0xx TARGET_DEVICE=m0 BUILD_FINGERP
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+	vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip

@@ -15,4 +15,4 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=tervigon BUILD_ID=IML74K BUILD_FING
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+	vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
