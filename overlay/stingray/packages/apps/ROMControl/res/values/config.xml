@@ -1,3 +1,7 @@
 <resources>
-	<bool name="has_notification_led">false</bool>
+    <!-- Whether device has hardware buttons -->
+    <bool name="has_hardware_buttons">false</bool>
+
+    <!-- Whether can use fast chage -->
+    <bool name="has_fast_charge">false</bool>
 </resources>
