@@ -15,7 +15,7 @@ PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES +=  PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys"
 
 PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/tuna/vold.fstab:system/etc/vold.fstab

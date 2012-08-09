@@ -44,6 +44,15 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
+# Default ringtone
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Scarabaeus.ogg \
+    ro.config.notification_sound=Antimony.ogg \
+    ro.config.alarm_alert=Scandium.ogg
+
+PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
+
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
 	ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
@@ -73,7 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/baked/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/baked/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
+    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
+    vendor/baked/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Cron
 PRODUCT_COPY_FILES += \
