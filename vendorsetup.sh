@@ -9,3 +9,4 @@ add_lunch_combo baked_i9300-userdebug
 add_lunch_combo baked_stingray-userdebug
 add_lunch_combo baked_tf300t-userdebug
 add_lunch_combo baked_wingray-userdebug
+add_lunch_combo baked_endeavoru-userdebug
