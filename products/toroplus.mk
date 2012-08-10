@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for toroplus.
-$(call inherit-product, device/samsung/torospr/full_torospr.mk)
+$(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/baked/configs/common_phone.mk)
@@ -9,9 +9,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/torospr
 
 # Setup device specific product configuration.
-PRODUCT_NAME := baked_torospr
+PRODUCT_NAME := baked_toroplus
 PRODUCT_BRAND := Google
-PRODUCT_DEVICE := torospr
+PRODUCT_DEVICE := toroplus
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
 

@@ -8,7 +8,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/tf300t.mk \
-    $(LOCAL_DIR)/torospr.mk \
+    $(LOCAL_DIR)/toroplus.mk \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/wingray.mk \
     $(LOCAL_DIR)/endeavoru.mk
