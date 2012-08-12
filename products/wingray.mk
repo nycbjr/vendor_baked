@@ -1,5 +1,7 @@
+# Inherit device configuration
 $(call inherit-product, device/moto/wingray/full_wingray.mk)
 
+# Inherit common product files.
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/wingray
@@ -11,11 +13,7 @@ PRODUCT_DEVICE := wingray
 PRODUCT_MODEL := Xoom
 PRODUCT_MANUFACTURER := Motorola
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=tervigon \
-    BUILD_FINGERPRINT="motorola/tervigon/wingray:4.1.1/JRO03H/405518:user/release-keys" \
-    PRIVATE_BUILD_DESC="tervigon-user 4.1.1 JRO03H 405518 release-keys" \
-    BUILD_NUMBER=405518
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=tervigon BUILD_FINGERPRINT="motorola/tervigon/wingray:4.1.1/JRO03H/405518:user/release-keys" PRIVATE_BUILD_DESC="tervigon-user 4.1.1 JRO03H 405518 release-keys" BUILD_NUMBER=405518
 
 # bootanimation
 PRODUCT_COPY_FILES += \

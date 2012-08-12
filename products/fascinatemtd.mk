@@ -1,13 +1,12 @@
 $(call inherit-product, device/samsung/fascinatemtd/full_fascinatemtd.mk)
 
-# Release name
-PRODUCT_RELEASE_NAME := Fascinate
-
+# Inherit common product files.
 $(call inherit-product, vendor/baked/configs/common_phone.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common
 
-# $(call inherit-product, vendor/cm/config/gsm.mk)
+# Release name
+PRODUCT_RELEASE_NAME := Fascinate
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := fascinatemtd

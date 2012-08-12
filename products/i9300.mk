@@ -1,9 +1,6 @@
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Release name
-PRODUCT_RELEASE_NAME := i9300
-
 # Inherit some common baked stuff.
 $(call inherit-product, vendor/baked/configs/common_phone.mk)
 
@@ -11,6 +8,9 @@ $(call inherit-product, vendor/baked/configs/common_phone.mk)
 $(call inherit-product, device/samsung/i9300/full_i9300.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2-common
+
+# Release name
+PRODUCT_RELEASE_NAME := i9300
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9300
