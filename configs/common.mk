@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
     ApexLauncher \
     Apollo \
     AppWidgetPicker \
+    Development \
     ROMControl \
     DSPManager \
     LatinImeDictionaryPack \
