@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/espressowifi/full_espressowifi.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_small_tablet.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/espressowifi
 

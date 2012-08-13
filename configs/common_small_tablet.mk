@@ -1,7 +1,7 @@
 # Inherit common tuff
 $(call inherit-product, vendor/baked/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/common_tablets
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/common_small_tablets
 
 PRODUCT_PACKAGES += \
         LiveWallpapers \

@@ -1,0 +1,121 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Mastur_mynds AboutPage app code -->
+    <header
+        android:id="@+id/about_page"
+        android:fragment="com.baked.romcontrol.fragments.About"
+        android:title="@string/teambaked_about_page"
+        android:icon="@drawable/ic_rom_control"
+        android:summary="@string/teambaked_about_summary" />
+
+    <!-- System -->
+    <header
+        android:id="@+id/system"
+        android:title="@string/header_system" />
+
+    <header
+        android:id="@+id/tools"
+        android:icon="@drawable/ic_rom_control_performance"
+        android:title="@string/header_performance_title"
+        android:summary="@string/header_summary_performance">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.baked.romcontrol.performance.Performance"
+            android:targetPackage="com.baked.romcontrol" />
+    </header>
+
+    <header
+        android:id="@+id/sound"
+        android:fragment="com.baked.romcontrol.fragments.Sound"
+        android:title="@string/header_sound_title"
+        android:icon="@drawable/ic_rom_control_sound"
+        android:summary="@string/header_summary_sound" />
+
+    <header
+        android:id="@+id/power_menu"
+        android:fragment="com.baked.romcontrol.fragments.PowerMenu"
+        android:title="@string/power_menu_options"
+        android:icon="@drawable/ic_rom_control_power_menu"
+        android:summary="@string/header_summary_power_menu" />
+
+    <header
+        android:id="@+id/nav_bar"
+        android:fragment="com.baked.romcontrol.fragments.Navbar"
+        android:title="@string/nav_bar"
+        android:icon="@drawable/ic_rom_control_navigation_bar"
+        android:summary="@string/header_summary_navigation_bar" />
+
+    <!-- Lockscreen section -->
+    <header
+        android:id="@+id/lockscreen"
+        android:title="@string/header_lockscreen" />
+
+    <header
+        android:id="@+id/lockscreen_targets"
+        android:fragment="com.baked.romcontrol.fragments.LockscreenTargets"
+        android:summary="@string/lockscreen_target_summary"
+        android:icon="@drawable/ic_rom_control_lockscreen_target"
+        android:title="@string/lockscreen_target_title" />
+
+    <header
+        android:id="@+id/lockscreen_extras"
+        android:fragment="com.baked.romcontrol.fragments.LockscreenInterface"
+        android:summary="@string/lockscreen_extra_summary"
+        android:icon="@drawable/ic_rom_control_lockscreen_extra"
+        android:title="@string/lockscreen_extra_title" />
+
+    <header
+        android:id="@+id/lockscreen_weather"
+        android:fragment="com.baked.romcontrol.fragments.Weather"
+        android:summary="@string/lockscreen_weather_summary"
+        android:icon="@drawable/ic_rom_control_weather"
+        android:title="@string/lockscreen_weather_title" />
+
+    <header
+        android:id="@+id/lockscreen_calendar"
+        android:fragment="com.baked.romcontrol.fragments.Calendar"
+        android:summary="@string/lockscreen_calendar_summary"
+        android:icon="@drawable/ic_rom_control_calendar"
+        android:title="@string/lockscreen_calendar_title" />
+
+    <!-- Statusbar section -->
+    <header
+        android:id="@+id/statusbar"
+        android:title="@string/header_statusbar" />
+
+    <header
+        android:id="@+id/statusbar_powerwidget"
+        android:fragment="com.baked.romcontrol.fragments.TabletPowerWidget"
+        android:icon="@drawable/ic_rom_control_powerwidget"
+        android:summary="@string/header_summary_powerwidget"
+        android:title="@string/header_tablet_powerwidget" />
+
+    <header
+        android:id="@+id/statusbar_toggles"
+        android:fragment="com.baked.romcontrol.fragments.StatusBarToggles"
+        android:icon="@drawable/ic_rom_control_toggles"
+        android:summary="@string/header_summary_toggles"
+        android:title="@string/toggles_layout" />
+
+    <header
+        android:id="@+id/statusbar_general"
+        android:fragment="com.baked.romcontrol.fragments.StatusBarGeneral"
+        android:title="@string/header_statusbar_general"
+        android:icon="@drawable/ic_rom_control_general"
+        android:summary="@string/header_summary_statusbar_general" />
+
+    <header
+        android:id="@+id/statusbar_battery"
+        android:title="@string/battery"
+        android:fragment="com.baked.romcontrol.fragments.StatusBarBattery"
+        android:icon="@drawable/ic_rom_control_battery"
+        android:summary="@string/header_summary_battery" />
+
+    <header
+        android:id="@+id/statusbar_clock"
+        android:fragment="com.baked.romcontrol.fragments.StatusBarClock"
+        android:summary="@string/header_summary_clock"
+        android:icon="@drawable/ic_rom_control_clock"
+        android:title="@string/clock" />
+
+</preference-headers>

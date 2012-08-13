@@ -2,7 +2,7 @@
 $(call inherit-product, device/moto/stingray/full_stingray.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_large_tablet.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/stingray
 
