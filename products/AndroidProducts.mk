@@ -7,6 +7,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/maguro.mk \
+    $(LOCAL_DIR)/p3113.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/tf201.mk \
     $(LOCAL_DIR)/tf300t.mk \
