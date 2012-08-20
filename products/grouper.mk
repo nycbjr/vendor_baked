@@ -16,3 +16,5 @@ PRODUCT_BUILD_PROP_OVERRIDES :=  PRODUCT_NAME=nakasi BUILD_FINGERPRINT=google/na
 # bootanimation
 PRODUCT_COPY_FILES += \
 	vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+
+PRODUCT_COPY_FILES += vendor/baked/prebuilt/asus_common/Supernote.apk:system/app/Supernote.apk
