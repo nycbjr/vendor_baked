@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
     ApexLauncher \
     Apollo \
     AppWidgetPicker \
+    BAKEDWalls \
     Development \
     ROMControl \
     DSPManager \
@@ -19,9 +20,11 @@ PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
     NoiseField \
+    OTAUpdater \
     PhaseBeam \
+    Trebuchet \
     libcyanogen-dsp \
-    SuperSU
+    Superuser
 
 # Use prebuilt su until fixed when built
 PRODUCT_COPY_FILES += \
