@@ -23,7 +23,7 @@ PRODUCT_RELEASE_NAME := p3113
 PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/bootanimation/bootanimation_1024_600.zip:system/media/bootanimation.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/espressowifi
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/p3100
 
 PRODUCT_PACKAGES += \
     NovaLauncher
