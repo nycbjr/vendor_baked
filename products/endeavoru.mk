@@ -23,7 +23,7 @@ PRODUCT_MODEL := HTC One X
 PRODUCT_MANUFACTURER := HTC
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=endeavoru BUILD_FINGERPRINT="htc_europe/endeavoru/endeavoru:4.1.1/IMM76D/70826.2:userdebug/test-keys" PRIVATE_BUILD_DESC="2.05.401.2 CL70826 test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=endeavoru BUILD_FINGERPRINT="htc_europe/endeavoru/endeavoru:4.1.1/IMM76D/70826.2:userdebug/test-keys" PRIVATE_BUILD_DESC="2.17.401.2 CL70826 test-keys"
 
 # Copy over prebuilt boot animation
 PRODUCT_COPY_FILES +=  \
