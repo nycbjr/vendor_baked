@@ -1,6 +1,5 @@
 # T-Mobile theme engine
 PRODUCT_PACKAGES += \
-    BAKEDOrange \
     ThemeManager \
     ThemeChooser \
     com.tmobile.themes
