@@ -12,3 +12,7 @@ PRODUCT_PACKAGES += \
 # Inherit drm blobs
 -include vendor/baked/configs/common_drm_tablet.mk
 
+# BT config
+PRODUCT_COPY_FILES += \
+    system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf
+
