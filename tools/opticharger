@@ -131,8 +131,8 @@ then
     cp $BASE/$1 $BASE/$1.old
 
     [ $QUIET ] || echo "Repacking apk.."
-    aapt p -0 .dat -0 .dict -F $NAME .
-    
+    aapt p -0 .dat -0 .dict -0 .arsc -F $NAME .
+
     [ $QUIET ] || echo "Resigning with cert: `echo $CERT`"
 
     [ $QUIET ] || echo java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
