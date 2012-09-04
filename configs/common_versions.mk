@@ -13,7 +13,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=3
 
 # OTA updater
+DATE = $(shell date +"%Y%m%d-%H%M")
 PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=baked0720118490 \
-    otaupdater.otatime=20120819-0127 \
+    otaupdater.otaid=$(TARGET_PRODUCT) \
+    otaupdater.otatime=$(DATE) \
     otaupdater.otaver=blackbean-3
