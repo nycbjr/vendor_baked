@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     NoiseField \
     OTAUpdater \
     PhaseBeam \
-    Trebuchet \
     libcyanogen-dsp \
     Superuser
 
