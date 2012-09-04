@@ -25,6 +25,13 @@
     </header>
 
     <header
+        android:id="@+id/propmodder_initd"
+        android:title="@string/propmodder_title"
+        android:fragment="com.baked.romcontrol.fragments.PropModder"
+        android:summary="@string/propmodder_title_summary"
+        android:icon="@drawable/ic_rom_control_propmodder" />
+
+    <header
         android:id="@+id/sound"
         android:fragment="com.baked.romcontrol.fragments.Sound"
         android:title="@string/header_sound_title"
@@ -117,5 +124,13 @@
         android:summary="@string/header_summary_clock"
         android:icon="@drawable/ic_rom_control_clock"
         android:title="@string/clock" />
+
+    <header
+        android:id="@+id/statusbar_extra"
+        android:fragment="com.baked.romcontrol.fragments.StatusBarExtra"
+        android:summary="@string/header_summary_system_extra"
+        android:icon="@drawable/ic_rom_control_general"
+        android:title="@string/header_system_extra" />
+
 
 </preference-headers>
