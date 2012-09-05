@@ -6,7 +6,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/d2vzw.mk \
     $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/fascinatemtd.mk \
-    $(LOCAL_DIR)/galaxymtd.mk \
+    $(LOCAL_DIR)/galaxysmtd.mk \
     $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/maguro.mk \
