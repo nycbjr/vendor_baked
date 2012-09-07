@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/xbin/su:system/xbin/su
 
 PRODUCT_PACKAGES += \
-    Superuser
+    SuperSU
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
