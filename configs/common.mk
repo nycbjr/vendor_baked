@@ -7,6 +7,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/dictionaries
 # T-Mobile theme engine
 include vendor/baked/configs/themes_common.mk
 
+# Basic common apps for baked
 PRODUCT_PACKAGES += \
     ApexLauncher \
     Apollo \
@@ -14,20 +15,26 @@ PRODUCT_PACKAGES += \
     BAKEDWalls \
     Development \
     ROMControl \
-    DSPManager \
     LatinImeDictionaryPack \
     Microbes \
     MusicFX \
     MusicVisualization \
     NoiseField \
     OTAUpdater \
-    PhaseBeam \
-    libcyanogen-dsp \
-    Superuser
+    PhaseBeam
 
-# Use prebuilt su until fixed when built
+# DSPManager and libs necessary for it
+PRODUCT_PACKAGES += \
+	DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
+
+# Use prebuilt su until fixed when built and prebuilt superuser app
 PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/xbin/su:system/xbin/su
+
+PRODUCT_PACKAGES += \
+    Superuser
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
