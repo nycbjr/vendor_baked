@@ -17,6 +17,7 @@ PRODUCT_PACKAGES += \
     ROMControl \
     LatinImeDictionaryPack \
     Microbes \
+    MusicFX \
     MusicVisualization \
     NoiseField \
     OTAUpdater \
@@ -24,7 +25,7 @@ PRODUCT_PACKAGES += \
 
 # DSPManager and libs necessary for it
 PRODUCT_PACKAGES += \
-    DSPManager \
+	DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
 
