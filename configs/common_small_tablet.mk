@@ -6,7 +6,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/common_small_tablets
 PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
-    Launcher2 \
+    NovaLauncher \
     VisualizationWallpapers \
     librs_jni
 
