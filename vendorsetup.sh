@@ -9,13 +9,13 @@ add_lunch_combo baked_d2spr-userdebug
 add_lunch_combo baked_d2tmo-userdebug
 add_lunch_combo baked_d2usc-userdebug
 add_lunch_combo baked_d2vzw-userdebug
-add_lunch_combo baked_galaxysmtd-userdebug
 add_lunch_combo baked_endeavoru-userdebug
 add_lunch_combo baked_fascinatemtd-userdebug
+add_lunch_combo baked_galaxysmtd-userdebug
 add_lunch_combo baked_i9300-userdebug
 add_lunch_combo baked_mesmerizemtd-userdebug
 add_lunch_combo baked_p3113-userdebug
-add_lunch_combo baked_showcase-userdebug
+add_lunch_combo baked_showcasemtd-userdebug
 add_lunch_combo baked_stingray-userdebug
 add_lunch_combo baked_tf201-userdebug
 add_lunch_combo baked_tf300t-userdebug
