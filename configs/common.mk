@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
     NoiseField \
-    OTAUpdater \
+    OTAUpdateCenter \
     PhaseBeam
 
 # DSPManager and libs necessary for it
