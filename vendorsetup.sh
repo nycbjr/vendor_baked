@@ -5,6 +5,7 @@ add_lunch_combo baked_crespo-userdebug
 add_lunch_combo baked_crespo4g-userdebug
 add_lunch_combo baked_grouper-userdebug
 add_lunch_combo baked_captivatemtd-userdebug
+add_lunch_combo baked_d2att-userdebug
 add_lunch_combo baked_d2spr-userdebug
 add_lunch_combo baked_d2tmo-userdebug
 add_lunch_combo baked_d2usc-userdebug
