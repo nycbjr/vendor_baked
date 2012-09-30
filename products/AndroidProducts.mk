@@ -18,6 +18,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/tf201.mk \
     $(LOCAL_DIR)/tf300t.mk \
+    $(LOCAL_DIR)/tf700t.mk \
     $(LOCAL_DIR)/toroplus.mk \
     $(LOCAL_DIR)/showcasemtd.mk \
     $(LOCAL_DIR)/stingray.mk \

@@ -20,5 +20,6 @@ add_lunch_combo baked_showcasemtd-userdebug
 add_lunch_combo baked_stingray-userdebug
 add_lunch_combo baked_tf201-userdebug
 add_lunch_combo baked_tf300t-userdebug
+add_lunch_combo baked_tf700t-userdebug
 add_lunch_combo baked_vibrantmtd-userdebug
 add_lunch_combo baked_wingray-userdebug
