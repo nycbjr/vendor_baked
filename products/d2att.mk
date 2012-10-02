@@ -6,7 +6,7 @@ $(call inherit-product, vendor/baked/configs/gsm.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/baked/configs/common_phone.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2att
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_d2att
