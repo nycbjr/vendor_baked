@@ -15,7 +15,6 @@ PRODUCT_PACKAGES += \
     BAKEDWalls \
     Development \
     ROMControl \
-    LatinImeDictionaryPack \
     Microbes \
     MusicFX \
     MusicVisualization \
@@ -76,6 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # init.d and Blobs common to all devices
 PRODUCT_COPY_FILES += \
+    vendor/baked/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/baked/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \
     vendor/baked/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
     vendor/baked/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
@@ -94,6 +94,12 @@ PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/baked/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/baked/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/baked/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/baked/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh
 
 # Cron
 PRODUCT_COPY_FILES += \
