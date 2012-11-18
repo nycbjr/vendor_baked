@@ -3,7 +3,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/crespo.mk \
     $(LOCAL_DIR)/crespo4g.mk \
     $(LOCAL_DIR)/d2att.mk \
-	$(LOCAL_DIR)/d2mtr.mk \
+    $(LOCAL_DIR)/d2mtr.mk \
     $(LOCAL_DIR)/d2spr.mk \
     $(LOCAL_DIR)/d2tmo.mk \
     $(LOCAL_DIR)/d2usc.mk \
@@ -16,6 +16,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/mesmerizemtd.mk \
     $(LOCAL_DIR)/p3113.mk \
+    $(LOCAL_DIR)/p5wifi.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/tf201.mk \
     $(LOCAL_DIR)/tf300t.mk \
