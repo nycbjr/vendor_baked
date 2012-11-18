@@ -4,6 +4,7 @@ $(call inherit-product, vendor/baked/configs/common.mk)
 -include vendor/baked/configs/common_drm_phone.mk
 
 PRODUCT_PACKAGES += \
+    ApexLauncher \
 	Trebuchet
 
 # BT config

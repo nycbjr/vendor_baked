@@ -9,10 +9,10 @@ include vendor/baked/configs/themes_common.mk
 
 # Basic common apps for baked
 PRODUCT_PACKAGES += \
-    ApexLauncher \
-    Apollo \
     AppWidgetPicker \
     BAKEDWalls \
+    CMFileManager \
+    CMFileManagerThemes \
     Development \
     ROMControl \
     Microbes \
@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 
 # DSPManager and libs necessary for it
 PRODUCT_PACKAGES += \
-	DSPManager \
+    DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
 
