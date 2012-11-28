@@ -3,12 +3,13 @@ BAKED Black Android Kang Everyone Desires (TeamBAKED)
 
 Getting Started
 ---------------
+Android 4.2+
 
 Please see the [Android source page](http://source.android.com/source/index.html) for building instructions.
 
 To initialize your local repository using our repos, use the following command:
 
-    repo init -u https://github.com/TeamBAKED/platform_manifest.git -b jb
+    repo init -u https://github.com/TeamBAKED/platform_manifest.git -b jb-4.2
 
 Then to sync up:
 
