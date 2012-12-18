@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common.mk)
 
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna

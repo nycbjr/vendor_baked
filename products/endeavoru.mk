@@ -1,8 +1,8 @@
 # Inherit the endeavoru device
 $(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
-# Inherit some common baked stuff.
-$(call inherit-product, vendor/baked/configs/common_phone.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/baked/configs/common.mk)
 
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/baked/configs/gsm.mk)

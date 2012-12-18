@@ -1,8 +1,8 @@
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit some common baked stuff.
-$(call inherit-product, vendor/baked/configs/common_phone.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/baked/configs/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i9300/full_i9300.mk)

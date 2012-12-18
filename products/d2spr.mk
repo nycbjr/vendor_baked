@@ -3,8 +3,8 @@ $(call inherit-product, device/samsung/d2spr/full_d2spr.mk)
 # Inherit some common BAKED stuff.
 $(call inherit-product, vendor/baked/configs/cdma.mk)
 
-# Inherit some common BAKED stuff.
-$(call inherit-product, vendor/baked/configs/common_phone.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/baked/configs/common.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2vzw
 

@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/p5wifi/p5wifi.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/baked/configs/common_large_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_tablet.mk)
 
 #
 # Setup device specific product configuration.

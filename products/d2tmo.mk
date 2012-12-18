@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_phone.mk)
+$(call inherit-product, vendor/baked/configs/common.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/baked/configs/gsm.mk)

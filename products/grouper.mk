@@ -2,7 +2,7 @@
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_small_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_tablet.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_grouper
@@ -11,7 +11,7 @@ PRODUCT_DEVICE := grouper
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.1.2/JZO54K/485486:user/release-keys" PRIVATE_BUILD_DESC="nakasi-user 4.1.2 JZO54K 485486 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.2/JOP40C/527662:user/release-keys" PRIVATE_BUILD_DESC="nakasi-user 4.2 JOP40C 527662 release-keys"
 
 # bootanimation
 PRODUCT_COPY_FILES += \

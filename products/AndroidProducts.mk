@@ -14,6 +14,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/maguro.mk \
+    $(LOCAL_DIR)/mako.mk \
+    $(LOCAL_DIR)/manta.mk \
     $(LOCAL_DIR)/mesmerizemtd.mk \
     $(LOCAL_DIR)/p3113.mk \
     $(LOCAL_DIR)/p5wifi.mk \

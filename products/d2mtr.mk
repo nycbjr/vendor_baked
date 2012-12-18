@@ -8,8 +8,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2vzw
 # Enhanced NFC
 #$(call inherit-product, vendor/baked/configs/nfc_enhanced.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/baked/configs/common_phone.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/baked/configs/common.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2mtr TARGET_DEVICE=d2mtr BUILD_FINGERPRINT="d2mtr-user 4.0.4 IMM76D R530MVQALJ1 release-keys" PRIVATE_BUILD_DESC="samsung/d2mtr/d2mtr:4.0.4/IMM76D/R530MVQALJ1:user/release-keys"
 

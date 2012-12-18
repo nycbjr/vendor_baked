@@ -2,9 +2,9 @@
 $(call inherit-product, device/moto/wingray/full_wingray.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_large_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_tablet.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/wingray
+# PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/wingray
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := baked_wingray

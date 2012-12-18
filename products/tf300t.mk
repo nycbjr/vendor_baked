@@ -2,9 +2,9 @@
 $(call inherit-product, device/asus/tf300t/full_tf300t.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_large_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_tablet.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tf-common
+# PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tf-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_tf300t
@@ -21,8 +21,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=EeePad BUILD_FINGERPRINT=asus/WW_ep
 PRODUCT_COPY_FILES += \
 	vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
 
-# Additional APK to install
-PRODUCT_COPY_FILES += vendor/baked/prebuilt/tf300t/MyCloud.apk:system/app/MyCloud.apk \
-                      vendor/baked/prebuilt/tf300t/StrAsus.apk:system/app/StrAsus.apk \
-                      vendor/baked/prebuilt/tf300t/PolarisOffice.apk:system/app/PolarisOffice.apk \
-                      vendor/baked/prebuilt/asus_common/Supernote.apk:system/app/Supernote.apk
+# Inherit additional apps to install
+$(call inherit-product, vendor/baked/prebuilt/asus_common/device_vendor.mk)
