@@ -12,11 +12,12 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CMFileManagerThemes \
     Development \
-    ROMControl \
-    Trebuchet \
     Microbes \
     OTAUpdateCenter \
-    PerformanceControl
+    ROMControl \
+    Superuser \
+    su \
+    Trebuchet
 
 # DSPManager and libs necessary for it
 PRODUCT_PACKAGES += \
@@ -25,11 +26,11 @@ PRODUCT_PACKAGES += \
     audio_effects.conf
 
 # Use prebuilt su
-PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/common/xbin/su:system/xbin/su
+# PRODUCT_COPY_FILES += \
+#    vendor/baked/prebuilt/common/xbin/su:system/xbin/su
 
-PRODUCT_PACKAGES += \
-    SuperSU
+# PRODUCT_PACKAGES += \
+#    SuperSU
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
