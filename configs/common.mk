@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
     AppWidgetPicker \
     BAKEDWalls \
     CMFileManager \
-    CMFileManagerThemes \
     Development \
     Microbes \
     OTAUpdateCenter \
@@ -48,7 +47,20 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs
+    tune2fs \
+    bash \
+    powertop \
+    nano
+
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ssh
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
