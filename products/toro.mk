@@ -6,7 +6,7 @@ $(call inherit-product, vendor/baked/configs/common.mk)
 
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna
-# PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/toro
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/toro
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_toro
