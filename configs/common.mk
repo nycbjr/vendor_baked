@@ -16,7 +16,8 @@ PRODUCT_PACKAGES += \
     ROMControl \
     Superuser \
     su \
-    Trebuchet
+    Trebuchet \
+    LockClock
 
 # DSPManager and libs necessary for it
 PRODUCT_PACKAGES += \
