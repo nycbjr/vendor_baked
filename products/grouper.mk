@@ -18,4 +18,5 @@ PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/bootanimation/bootanimation_800_1280.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGES += \
-    Supernote
+    Supernote \
+    CMFileManagerThemes

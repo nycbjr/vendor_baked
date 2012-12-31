@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="available_toggles_entries">
+    <!--<string-array name="available_toggles_entries">
         <item>ROTATE</item>
         <item>BT</item>
         <item>GPS</item>
@@ -20,9 +20,9 @@
         <item>MEDIA_NEXT</item>
         <item>MEDIA_PLAY</item>
         <item>MEDIA_PREVIOUS</item>
-    </string-array>
+    </string-array>-->
 
-    <string-array name="available_toggles_values">
+    <!--<string-array name="available_toggles_values">
         <item>@string/toggle_auto_rotate</item>
         <item>@string/toggle_bluetooth</item>
         <item>@string/toggle_gps</item>
@@ -41,7 +41,7 @@
         <item>@string/toggle_mediaplay</item>
         <item>@string/toggle_medianext</item>
         <item>@string/toggle_mediaprevious</item>
-    </string-array>
+    </string-array>-->
 
     <string-array name="navigation_bar_qty_entries">
         <item>1</item>
