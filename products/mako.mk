@@ -8,7 +8,7 @@ $(call inherit-product, vendor/baked/configs/common.mk)
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # Mako Overlay
-# PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/mako
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/mako
 
 # Setup device specific product configuration
 PRODUCT_NAME := baked_mako
