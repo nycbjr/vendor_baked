@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
     Microbes \
     OTAUpdateCenter \
     ROMControl \
+    SoundRecorder \
     Superuser \
     su \
     Trebuchet \
