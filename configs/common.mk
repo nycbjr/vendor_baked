@@ -82,7 +82,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
     windowsmgr.max_events_per_sec=240 \
-    ro.kernel.android.checkjni=0
+    ro.kernel.android.checkjni=0 \
+    ro.backuptool.version=1
 
 # init.d and Blobs common to all devices
 PRODUCT_COPY_FILES += \
@@ -110,7 +111,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/baked/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/baked/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh
+    vendor/baked/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
+    vendor/baked/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Cron
 PRODUCT_COPY_FILES += \
