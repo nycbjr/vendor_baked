@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
 # Inherit baked common_tablet bits
-$(call inherit-product, vendor/baked/configs/common_tablet.mk)
+$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
 
 # Manta Overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/manta

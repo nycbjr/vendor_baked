@@ -4,7 +4,7 @@ $(call inherit-product, device/samsung/d2att/full_d2att.mk)
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2att
 
@@ -20,4 +20,4 @@ PRIVATE_BUILD_DESC="samsung/full_d2att/d2att:4.1.1/JRO03L/eng.ar.20120827.191311
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip

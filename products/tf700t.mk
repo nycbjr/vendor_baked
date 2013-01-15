@@ -18,8 +18,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=EeePad BUILD_FINGERPRINT=asus/US_ep
 # PRODUCT_RELEASE_NAME := tf700t
 
 # bootanimation
-#PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
+PRODUCT_COPY_FILES += \
+    vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
 
 # Inherit additional apps to install
 $(call inherit-product, vendor/baked/prebuilt/asus_common/device_vendor.mk)

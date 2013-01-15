@@ -4,7 +4,7 @@ $(call inherit-product, device/samsung/d2spr/full_d2spr.mk)
 $(call inherit-product, vendor/baked/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2vzw
 
@@ -19,4 +19,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2spr TARGET_DEVICE=d2spr BUILD_FIN
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip

@@ -1,11 +1,11 @@
+# Inherit device configuration
+$(call inherit-product, device/samsung/i9300/full_i9300.mk)
+
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
-
-# Inherit device configuration
-$(call inherit-product, device/samsung/i9300/full_i9300.mk)
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2-common
 
@@ -24,4 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m0xx TARGET_DEVICE=m0 BUILD_FINGERP
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
