@@ -1,11 +1,11 @@
 add_lunch_combo baked_toro-userdebug
 add_lunch_combo baked_maguro-userdebug
-add_lunch_combo baked_mako-userdebug
-add_lunch_combo baked_manta-userdebug
 add_lunch_combo baked_toroplus-userdebug
+add_lunch_combo baked_mako-userdebug
+add_lunch_combo baked_grouper-userdebug
+add_lunch_combo baked_manta-userdebug
 add_lunch_combo baked_crespo-userdebug
 add_lunch_combo baked_crespo4g-userdebug
-add_lunch_combo baked_grouper-userdebug
 add_lunch_combo baked_captivatemtd-userdebug
 add_lunch_combo baked_d2att-userdebug
 add_lunch_combo baked_d2mtr-userdebug
