@@ -21,8 +21,8 @@ else
 fi
 
 if [ -z "$OUT" -o ! -d "$OUT" ]; then
-        echo -e $CL_RED"ERROR: $0 only works with a full build environment. $OUT should exist."$CL_RST
-        exit 1
+	echo -e $CL_RED"ERROR: $0 only works with a full build environment. $OUT should exist."$CL_RST
+	exit 1
 fi
 
 if [ "$TARGET_BUILD_TYPE" = "debug" ]; then
@@ -33,8 +33,8 @@ else
     OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
 fi
 if [ ! -f "$OTAPACKAGE" ]; then
-        echo -e $CL_RED"$OTAPACKAGE doesn't exist!"$CL_RST;
-        exit 1
+	echo -e $CL_RED"$OTAPACKAGE doesn't exist!"$CL_RST;
+	exit 1
 fi
 
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/baked/tools/opticharger
@@ -171,9 +171,9 @@ echo
 printf "Signing package..."
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx1024m \
-        -jar $OUT/../../../host/$OUT_TARGET_HOST/framework/signapk.jar \
-        -w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
-        $REPACK/update.zip $OUTFILE
+	-jar $OUT/../../../host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
+	$REPACK/update.zip $OUTFILE
 echo
 printf "Cleaning up..."
 rm -rf $REPACK
@@ -184,13 +184,9 @@ echo
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
-ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
 echo
-echo -e $CL_GRN"============Package complete=========="$CL_RST
-echo -e $CL_GRN"zip: $OUTFILE"$CL_RST
+echo -e $CL_GRN"Package complete: $OUTFILE"$CL_RST
 echo -e $CL_GRN"md5: $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
-echo -e $CL_GRN"size: $ZIPSIZE"$CL_RST
-echo -e $CL_GRN"======================================"$CL_RST
 echo
 )
 
