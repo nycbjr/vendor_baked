@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/ville/device_ville.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/baked/configs/gsm.mk)
