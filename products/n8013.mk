@@ -6,7 +6,7 @@ $(call inherit-product, device/samsung/n8013/full_n8013.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := baked_n8013
 PRODUCT_BRAND := samsung
-PRODUCT_DEVICE := p4notewifi
+PRODUCT_DEVICE := n8013
 PRODUCT_MODEL := GT-N8013
 PRODUCT_MANUFACTURER := samsung
 

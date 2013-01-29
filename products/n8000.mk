@@ -5,12 +5,12 @@ $(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/n8013/full_n8000.mk)
+$(call inherit-product, device/samsung/n8000/full_n8000.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := baked_n8000
 PRODUCT_BRAND := samsung
-PRODUCT_DEVICE := p4noterf
+PRODUCT_DEVICE := n8000
 PRODUCT_MODEL := GT-N8000
 PRODUCT_MANUFACTURER := samsung
 
