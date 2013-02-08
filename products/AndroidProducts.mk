@@ -26,7 +26,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/tf300t.mk \
     $(LOCAL_DIR)/tf700t.mk \
     $(LOCAL_DIR)/toroplus.mk \
-    $(LOCAL_DIR)/showcasemtd.mk \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/ville.mk \

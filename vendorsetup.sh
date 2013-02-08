@@ -23,7 +23,6 @@ add_lunch_combo baked_n8000-userdebug
 add_lunch_combo baked_n8013-userdebug
 add_lunch_combo baked_p3110-userdebug
 add_lunch_combo baked_p5wifi-userdebug
-add_lunch_combo baked_showcasemtd-userdebug
 add_lunch_combo baked_stingray-userdebug
 add_lunch_combo baked_tf300t-userdebug
 add_lunch_combo baked_tf700t-userdebug
