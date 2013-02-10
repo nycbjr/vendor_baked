@@ -1,11 +1,11 @@
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/i9100g/full_i9100g.mk)
-
 # Inherit baked common configs.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/samsung/i9100g/full_i9100g.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/i9100
 
