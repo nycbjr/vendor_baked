@@ -1,5 +1,5 @@
 # Inherit CDMA make.
-$(call inherit-product, vendor/baked/configs/cdma.mk)
+# Apns called in device tree
 
 # Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
