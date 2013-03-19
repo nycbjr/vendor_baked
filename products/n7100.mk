@@ -1,10 +1,10 @@
-# Specify phone tech before including full_phone
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit baked common configs.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
 
-# Inherit device configuration
+# Inherit device configuration for n7000.
 $(call inherit-product, device/samsung/n7100/full_n7100.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/note-common
@@ -12,7 +12,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/note-common
 # Release name
 PRODUCT_RELEASE_NAME := GT-N7100
 
-## Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7100
 PRODUCT_NAME := baked_n7100
 PRODUCT_BRAND := samsung
