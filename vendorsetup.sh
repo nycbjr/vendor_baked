@@ -20,6 +20,7 @@ add_lunch_combo baked_i9100-userdebug
 add_lunch_combo baked_i9100g-userdebug
 add_lunch_combo baked_i9300-userdebug
 add_lunch_combo baked_mesmerizemtd-userdebug
+add_lunch_combo baked_m7-userdebug
 add_lunch_combo baked_n7000-userdebug
 add_lunch_combo baked_n7100-userdebug
 add_lunch_combo baked_n8000-userdebug
