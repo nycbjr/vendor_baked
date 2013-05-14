@@ -7,6 +7,8 @@ $(call inherit-product, vendor/baked/configs/common_full.mk)
 # Inherit device configuration for evita.
 $(call inherit-product, device/htc/evita/device_evita.mk)
 
+DEVICE_PACKAGE_OVERLAYS += vendor/baked/overlay/evita
+
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_evita
 PRODUCT_BRAND := HTC
