@@ -3,6 +3,9 @@
     <!-- LED Flashlight -->
     <bool name="has_led_flash">true</bool>
 
-   <!-- Whether to display the Stylus Gestures settings -->
+    <!-- Whether device has hardware buttons -->
+    <bool name="has_hardware_buttons">true</bool>
+
+    <!-- Whether to display the Stylus Gestures settings -->
     <bool name="config_stylusGestures">false</bool>
 </resources>
