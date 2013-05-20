@@ -23,5 +23,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_m7 BUILD_ID=JZO54K BUILD_FINGER
 PRODUCT_RELEASE_NAME := m7
 
 PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation.zip
 
