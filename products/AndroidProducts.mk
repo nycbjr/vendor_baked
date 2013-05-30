@@ -20,7 +20,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
     $(LOCAL_DIR)/mesmerizemtd.mk \
-    $(LOCAL_DIR)/m7.mk \
+    $(LOCAL_DIR)/m7att.mk \
     $(LOCAL_DIR)/n7000.mk \
     $(LOCAL_DIR)/n7100.mk \
     $(LOCAL_DIR)/n8000.mk \
