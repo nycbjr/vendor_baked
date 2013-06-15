@@ -8,6 +8,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/d2tmo.mk \
     $(LOCAL_DIR)/d2usc.mk \
     $(LOCAL_DIR)/d2vzw.mk \
+    $(LOCAL_DIR)/dlx.mk \
     $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/evita.mk \
     $(LOCAL_DIR)/fascinatemtd.mk \
@@ -37,4 +38,3 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/ville.mk \
     $(LOCAL_DIR)/wingray.mk
-
