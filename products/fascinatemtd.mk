@@ -1,7 +1,11 @@
+# Inherit CDMA make.
+$(call inherit-product, vendor/baked/configs/cdma.mk)
+
+# Inherit device tree configuration for fascinatemtd.
 $(call inherit-product, device/samsung/fascinatemtd/full_fascinatemtd.mk)
 
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common
 
@@ -19,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-I500 TARGET_DEVICE=SCH-I500 BUI
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip

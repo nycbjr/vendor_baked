@@ -1,8 +1,11 @@
-# Inherit device configuration
-$(call inherit-product, device/moto/stingray/full_stingray.mk)
+# Inherit CDMA make.
+# Apns called in device tree
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
+
+# Inherit AOSP device configuration for stingray.
+$(call inherit-product, device/moto/stingray/full_stingray.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/stingray
 
@@ -18,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=trygon BUILD_FINGERPRINT="verizon/t
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip

@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for d2tmo.
-$(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
-
-# Inherit GSM common stuff
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
+
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for d2tmo.
+$(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2-common
 
@@ -20,4 +20,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2tmo TARGET_DEVICE=d2tmo BUILD_FIN
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip

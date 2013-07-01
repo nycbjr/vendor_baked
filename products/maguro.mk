@@ -1,11 +1,11 @@
+# Inherit GSM make.
+$(call inherit-product, vendor/baked/configs/gsm.mk)
+
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
+
 # Inherit AOSP device configuration for maguro.
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
-
-# Inherit GSM common stuff
-$(call inherit-product, vendor/baked/configs/gsm.mk)
 
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna
@@ -18,10 +18,7 @@ PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.2.1/JOP40D/533553:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.2.1 JOP40D 533553 release-keys"
-
-PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.2.2/JDQ39/573038:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.2.2 JDQ39 573038 release-keys"
 
 # Maguro specific packages
 PRODUCT_PACKAGES += \
