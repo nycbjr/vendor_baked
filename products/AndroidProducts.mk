@@ -8,23 +8,33 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/d2tmo.mk \
     $(LOCAL_DIR)/d2usc.mk \
     $(LOCAL_DIR)/d2vzw.mk \
+    $(LOCAL_DIR)/dlx.mk \
     $(LOCAL_DIR)/endeavoru.mk \
+    $(LOCAL_DIR)/evita.mk \
     $(LOCAL_DIR)/fascinatemtd.mk \
     $(LOCAL_DIR)/galaxysmtd.mk \
+    $(LOCAL_DIR)/i9100.mk \
+    $(LOCAL_DIR)/i9100g.mk \
     $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
     $(LOCAL_DIR)/mesmerizemtd.mk \
-    $(LOCAL_DIR)/p3113.mk \
+    $(LOCAL_DIR)/m7att.mk \
+    $(LOCAL_DIR)/m7ul.mk \
+    $(LOCAL_DIR)/n7000.mk \
+    $(LOCAL_DIR)/n7100.mk \
+    $(LOCAL_DIR)/n8000.mk \
+    $(LOCAL_DIR)/n801x.mk \
+    $(LOCAL_DIR)/p3110.mk \
     $(LOCAL_DIR)/p5wifi.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/tf201.mk \
     $(LOCAL_DIR)/tf300t.mk \
     $(LOCAL_DIR)/tf700t.mk \
     $(LOCAL_DIR)/toroplus.mk \
-    $(LOCAL_DIR)/showcasemtd.mk \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
+    $(LOCAL_DIR)/ville.mk \
     $(LOCAL_DIR)/wingray.mk

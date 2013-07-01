@@ -1,11 +1,11 @@
-## Specify phone tech before including full_phone
+# Inherit CDMA make.
 $(call inherit-product, vendor/baked/configs/cdma.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/mesmerizemtd/full_mesmerizemtd.mk)
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
+# Inherit device configuration for mesmerizemtd.
+$(call inherit-product, device/samsung/mesmerizemtd/full_mesmerizemtd.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common
 

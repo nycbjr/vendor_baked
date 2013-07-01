@@ -1,11 +1,11 @@
+# Inherit GSM make
+$(call inherit-product, vendor/baked/configs/gsm.mk)
+
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
+
 # Inherit AOSP device configuration for crespo.
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
-
-# Inherit GSM common stuff
-$(call inherit-product, vendor/baked/configs/gsm.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/crespo
 
@@ -23,4 +23,4 @@ PRODUCT_PACKAGES += \
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip

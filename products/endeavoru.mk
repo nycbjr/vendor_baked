@@ -1,16 +1,16 @@
-# Inherit the endeavoru device
-$(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
-
-# Specify phone tech before including full_phone
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
+
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for endeavoru.
+$(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
 DEVICE_PACKAGE_OVERLAYS += vendor/baked/overlay/endeavoru
 
 PRODUCT_PACKAGES += \
-	Camera
+    Camera
 
 # Release name
 PRODUCT_RELEASE_NAME := endeavoru
@@ -28,6 +28,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=endeavoru BUILD_FINGERPRINT="htc_eu
 # Copy over prebuilt boot animation
 PRODUCT_COPY_FILES +=  \
     vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
-
-PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml \

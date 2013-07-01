@@ -1,8 +1,11 @@
+# Inherit CDMA make.
+# Apns called in device tree.
+
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
+
 # Inherit AOSP device configuration for toro.
 $(call inherit-product, device/samsung/toro/full_toro.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
 
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna
@@ -15,10 +18,7 @@ PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.1.1/JRO03O/424425:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.1.1 JRO03O 424425 release-keys"
-
-PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mysid BUILD_ID=JDQ39 BUILD_FINGERPRINT=google/mysid/toro:4.2.2/JDQ39/125147:user/release-keys PRIVATE_BUILD_DESC="mysid-user 4.2.2 JDQ39 125147 release-keys" BUILD_NUMBER=125147
 
 # Toro specific packages
 PRODUCT_PACKAGES += \
@@ -26,4 +26,4 @@ PRODUCT_PACKAGES += \
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-	vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+   vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
