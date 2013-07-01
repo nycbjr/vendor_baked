@@ -37,3 +37,4 @@ add_lunch_combo baked_tf700t-userdebug
 add_lunch_combo baked_vibrantmtd-userdebug
 add_lunch_combo baked_ville-userdebug
 add_lunch_combo baked_wingray-userdebug
+add_lunch_combo baked_sgp311-userdebug
