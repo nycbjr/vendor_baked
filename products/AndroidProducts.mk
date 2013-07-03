@@ -38,4 +38,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/ville.mk \
     $(LOCAL_DIR)/sgp311.mk \
+    $(LOCAL_DIR)/odin.mk \
     $(LOCAL_DIR)/wingray.mk
